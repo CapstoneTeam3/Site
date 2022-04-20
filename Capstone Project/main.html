@@ -6,10 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Team 3 Capstone Project</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Open+Sans">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.js"></script>
     <script src="main.js"></script>
+
+    <script src="Resources/PrivLaws/raphael.js"></script>
+    <script src="Resources/PrivLaws/jquery.usmap.js"></script>
 
 </head>
 <body ng-controller="ctrl">
@@ -19,8 +25,57 @@
         <a href="NewsFeed.html" id="NewsFeed">News Feed</a>
         <a href="PrivacyTracker.html" id="PrivTrack">Privacy Tracker</a>
         <a href="PrivacyLaws.html" id="PrivLaws">Privacy Laws</a>
-        <a href="Map.html" id="map">Map</a>
+        <a href="Map.html">Map</a>
         <a href="Acquisitions.html">Acquisitions</a>
     </header>
+
+    <div id='static_fact_body'>
+        <div class='static_fact'>
+            <h2>137</h2>
+            <p>Countries with Privacy Legislation</p>
+        </div>
+        <div class='static_fact'>
+            <h2>4</h2>
+            <p>U.S. States with Signed Privacy Legislation</p>
+        </div>
+        <div class='static_fact'>
+            <h2>11</h2>
+            <p>Companies Using Cashierless Retail Technology</p>
+        </div>
+        <div class='static_fact'>
+            <h2>41</h2>
+            <p>Cashierless Retail Stores Worldwide</p>
+        </div>
+    </div>
+    <div class='news_map_body'>
+        <div class="news" id="news1">
+            <h3><a href="NewsFeed.html">Cashierless Retail News</a></h3>
+        </div>
+        <div class="map" id="store_map">
+            <h3><a href="PrivacyLaws.html">Privacy Laws in the United States</a></h3>
+            <iframe width="100%" height="420" frameborder="0"
+        src="https://observablehq.com/embed/3a34810af84d6d72?cells=chart%2Cviewof+date"></iframe>
+        </div>
+    </div>
+    <div class='news_map_body'>
+        <div class="news" id="law_news">
+            <h3><a href="NewsFeed.html">Cashierless Retail News</a></h3>
+        </div>
+        <div class="map" id="law_map">
+            <h3><a href="PrivacyLaws.html">Privacy Laws in the United States</a></h3>
+            <div id="main_map"></div>
+            <div id="clicked-state"></div>
+            <div id="map_key">
+                <p><span id="inactive_key">▶</span><b>Inactive Bills</b></p>
+                <p><span id="no_bills_key">▶</span><b>No Bills</b></p>
+                <p><span id="intro_key">▶</span><b>Introduced</b></p>
+                <p><span id="in_com_key">▶</span><b>In Committee</b></p>
+                <p><span id="in_cross_cham_key">▶</span><b>In Cross Chamber</b></p>
+                <p><span id="in_cross_com_key">▶</span><b>In Cross Committee</b></p>
+                <p><span id="passed_key">▶</span><b>Passed</b></p>
+                <p><span id="signed_key">▶</span><b>Signed</b></p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
