@@ -6,7 +6,7 @@ body {
     width: 100vw;
     height: 100vh;
     user-select: none;
-    min-width: 850px;
+    min-width: 1000px;
 }
 
 /* ------------- HEADER ELEMENTS ------------- */
@@ -18,7 +18,7 @@ header {
     padding-left: 2vw;
     position: fixed;
     z-index: 1;
-    min-width: 925px;
+    min-width: 1000px;
 }
 
 header a {
@@ -84,11 +84,131 @@ h1 {
 
 .container {
   height: 90vh;
-  position:relative;
-  top:100px;
 }
 
 .center-block{
-   position: relative;
-   top:100px;
+    position: relative;
+    top:100px;
+ }
+
+
+/* ------------- DASHBOARD ------------- */
+#static_fact_body {
+    margin: 0 1% 0 1%;
+    width: 100%;
+}
+.static_fact {
+    margin: 100px 1% 0 1%;
+    padding: 3vh;
+    color: black;
+    font-size: 12pt;
+    background-color: white;
+    z-index: 2;
+    text-align: center;
+    width: 22.5%;
+    height: 170px;
+    float: left;
+    border-radius: 15px;
+}
+
+.news_map_body {
+    margin: 0 1% 0 1%;
+    width: 100%;
+}
+.news {
+    margin: 25px 1% 0px 1%;
+    padding: 1vh 3vh 3vh 3vh;
+    background-color: white;
+    z-index: 2;
+    width: 22.5%;
+    height: 500px;
+    text-align: left;
+    float: left;
+    border-radius: 15px;
+}
+
+.map h3 a, .news h3 a{
+    color: black;
+    font-size: 16pt;
+    font-weight: bold;
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.map h3 a:hover, .news h3 a:hover{
+    color: #43B02A;
+    text-decoration: none;
+}
+
+.map {
+    margin: 25px 1% 0px 1%;
+    padding: 1vh 3vh 3vh 3vh;
+    background-color: white;
+    z-index: 2;
+    width: 71.5%;
+    height: 500px;
+    text-align: left;
+    float: left;
+    border-radius: 15px;
+}
+#news1 {
+    width: 35%;
+}
+#store_map {
+    width: 59%;
+}
+
+#law_news, #law_map {
+    margin-bottom: 25px;
+}
+
+#main_map {
+    width: 515px;
+    float:left;
+    height: 700;
+    padding-top: 25px;
+}
+#map_key {
+    float: left;
+    width: 23%;
+    padding-top: 185px;
+}
+
+#no_bills_key {
+    padding-right: 10px;
+    color: #E6E6E6;
+}
+
+#inactive_key {
+    padding-right: 10px;
+    color: #9E9E9E;
+}
+
+#intro_key {
+    padding-right: 10px;
+    color: #e75f5f;
+}
+
+#in_com_key {
+    padding-right: 10px;
+    color: #f7be68;
+}
+
+#in_cross_cham_key {
+    padding-right: 10px;
+    color: #f5ff6b;
+}
+
+#in_cross_com_key{
+    padding-right: 10px;
+    color: #a9f577;
+}
+
+#passed_key {
+    padding-right: 10px;
+    color: #7ca5ff;
+}
+
+#signed_key {
+    padding-right: 10px;
+    color: #dcb7ff;
 }
