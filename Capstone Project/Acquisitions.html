@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Resources/Acquisitions/Acquisitions.css">
     <script src="main.js"></script>
 </head>
 <body ng-controller="ctrl">
@@ -17,9 +18,20 @@
         <h1 id="header-right" onclick="window.location.href='main.html'">Retail</h1>
         <a href="NewsFeed.html" id="NewsFeed">News Feed</a>
         <a href="PrivacyLaws.html" id="PrivLaws">Privacy Laws</a>
-        <a href="Map.html" id="map">Map</a>
+        <a href="Map.html">Map</a>
         <a href="Acquisitions.html" class = "click">Acquisitions</a>
     </header>
 
+    <div class="page_header">
+        <h2>Amazon Acquisitions</h2>
+        <h3>A representation of companies Amazon has acquired as of 2022.</h3>
+    </div>
+    
+    <div id="acq_body">
+        <a href="https://www.statista.com/chart/24941/amazon-acquisitions/"><img src="https://cdn.statcdn.com/Infographic/images/normal/24941.jpeg" alt="Infographic: Amazon’s Biggest Acquisitions | Statista"></a>
+        <video controls>
+            <source src="Resources/Acquisitions/Bubble Chart.mp4" type="video/mp4">
+        </video>
+    </div>
 </body>
 </html>
