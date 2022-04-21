@@ -146,7 +146,7 @@ h1 {
     width: 59%;
 }
 
-#law_news, #law_map {
+#law_map {
     margin-bottom: 25px;
 }
 
@@ -161,6 +161,48 @@ h1 {
     width: 23%;
     padding-top: 185px;
 }
+#acq_header {
+    font-size: 22pt;
+}
+
+#acq_text {
+    color: black;
+    font-size: 12pt;
+}
+
+#acq_text li {
+    margin-left: -20px;
+    padding: 1vh 0 1vh 0;
+}
+
+#acq_text li::before {
+    content: "";
+    width: 20px;
+    display: inline-block;
+}
+
+#acq_text img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+#WholeFoods_img {
+    width: 49%;
+} 
+#MGM_img {
+    width: 55%;
+}
+
+#Zappos_img, #Twitch_img {
+    width: 50%;
+}
+
+#Zoox_img {
+    width: 55%;
+    margin: 10px 10px 5px 0px;
+}
+
 
 #no_bills_key {
     padding-right: 10px;
