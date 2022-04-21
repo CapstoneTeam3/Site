@@ -1,0 +1,41 @@
+.page_header {
+    font-family: sans-serif;
+    width: 100%;
+    padding: 5vh 5vh 2vh 5vh;
+    background-color: black;
+    color: rgb(214, 214, 214);
+    z-index: 2;
+}
+
+.page_header h2 {
+    font-size: 21pt;
+    font-weight: normal;
+    text-align: left;
+    padding: 100px 25px 0px 0px;
+    background-color: black;
+    color: white;
+}
+
+.page_header h3 {
+    font-size: 12pt;
+}
+
+#acq_body {
+    margin: 2vh;
+    padding: 4vh 2vh 4vh 4vh;
+    color: black;
+    font-size: 12pt;
+    background-color: white;
+    z-index: 3;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    filter: brightness(1.1)
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
